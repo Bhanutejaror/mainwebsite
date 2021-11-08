@@ -19,7 +19,6 @@ gem 'railties', '~> 6.1.4.1'
 gem 'bootstrap', '~> 4.4.1'
 gem 'jquery-rails'
 gem 'yarn'
-
 gem 'webpacker', '~> 5.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
