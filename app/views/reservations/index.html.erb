@@ -1,0 +1,45 @@
+<h1>All Reservations</h1>
+ 
+<table class="table">
+  <tr>
+     
+     <b><th>Date</th></b>
+    <th>Name</th>
+    <th>Phone Number</th>
+    <th>Cake Size</th>
+    <th>Flavour</th>
+     <th>Delivery or Pickup</th>
+     <th> If Delivery, Address:</th>
+     <th>Delivery Phone number</th>
+     <th>Amount</th>
+     <th>Paid</th>
+     <th>Balance or COD</th>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Image</th>
+
+  </tr>
+ 
+  <% @reservations.each do |reservation| %>
+    <tr>
+      <strong><b><td><%= reservation.date %></td></b></strong>
+      <td><%= reservation.name %></td>
+      <td><%= reservation.phone_number %></td>
+      <td><%= reservation.cake_size %></td>
+      <td><%= reservation.flavour %></td>
+      <td><%= reservation.delivery_or_pickup %></td>
+      <td><%= reservation.delivery_address %></td>
+      <td><%= reservation.d_phone_number %></td>
+      <td><%= reservation.amount %></td>
+      <td><%= reservation.paid %></td>
+      <td><%= reservation.balance %></td>
+      <td><%= reservation.date %></td>
+      <td><%= reservation.time %></td>
+      <td><%= reservation.image %></td>
+      <td><%= link_to 'Details', reservation_path(reservation) %> </td>
+    </tr>
+  <% end %>
+</table>
+
+
+<%= link_to 'Back', root_path %>

@@ -1,0 +1,66 @@
+<h1 align="center">reservation Details</h1>
+
+<div align="center"> 
+
+<table style="width:15%">
+
+<tr>
+
+  <tr>
+  <td><strong>Date:</strong></td>
+  <td><%= @reservation.date %></td>
+</tr>
+
+  <td><strong>Name:</strong></td>
+  <td><%= @reservation.name %></td>
+</tr>
+<tr>
+  <td><strong>Phone Number:</strong></td>
+  <td><%= @reservation.phone_number %></td>
+</tr>
+<tr>
+  <td><strong>Cake Size:</strong></td>
+  <td><%= @reservation.cake_size %></td>
+</tr>
+
+<tr>
+  <td><strong>Flavour:</strong></td>
+  <td><%= @reservation.flavour %></td>
+</tr>
+<tr>
+  <td><strong>Delivery Or Pickup:</strong></td>
+  <td><%= @reservation.delivery_or_pickup %></td>
+</tr>
+<tr>
+  <td><strong>If Delivery, Address:</strong></td>
+  <td><%= @reservation.delivery_address %></td>
+</tr>
+<tr>
+  <td><strong>Delviery Phone Number:</strong></td>
+  <td><%= @reservation.d_phone_number %></td>
+</tr>
+<tr>
+  <td><strong>Amount:</strong></td>
+  <td><%= @reservation.amount %></td>
+</tr>
+<tr>
+  <td><strong>paid:</strong></td>
+  <td><%= @reservation.paid %></td>
+</tr>
+<tr>
+  <td><strong>balance:</strong></td>
+  <td><%= @reservation.balance %></td>
+</tr>
+<tr>
+  <td><strong>Time:</strong></td>
+  <td><%= @reservation.time %></td>
+</tr>
+<tr>
+  <td><strong>Image</strong></td>
+  <td><%= @reservation.image %></td>
+</tr>
+</table>
+</div>
+
+
+<h4 align="center"><%= link_to 'View all Reservations', reservations_path %> | <%= link_to 'Make New reservation' , new_reservation_path %></h4>
