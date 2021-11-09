@@ -5,6 +5,9 @@
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
     "react-scripts": "^4.0.3",
+    "boostrap": '^4.2.0',
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0",
     "webpack": "4.46.0",
     "webpack-cli": "3.3.12"
   },
